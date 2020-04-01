@@ -27,13 +27,10 @@
     name: iptables-services
     state: present
 
+
+# disabling firewall temporary hack for minikube
 - name: Enable iptables service
   service:
     name: iptables
-    enabled: yes
-    state: started
-
-
-
-
-       
+    enabled: no
+    state: stopped

@@ -142,10 +142,4 @@
 
 - name: granting admin priviledges
   shell: kubectl create rolebinding default-admin --clusterrole=admin --serviceaccount=default:default
-  
-# temporary hack  
-- name: Stop iptables service
-  service:
-    name: iptables
-    enabled: yes
-    state: stopped
+ 

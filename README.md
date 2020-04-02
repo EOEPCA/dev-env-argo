@@ -72,17 +72,17 @@ Tools and environment definitions for local EOEPCA service development activitie
 
 3. Download EOEPCA development environment template for c++ 
     
-    wget https://github.com/EOEPCA/dev-env-cpp/archive/develop.zip'
+<pre><code>   wget https://github.com/EOEPCA/dev-env-cpp/archive/develop.zip'</code></pre>
 
-4. To build and instantiate the EOEPCA development environment run the following command:
+4. Build and instantiate the EOEPCA development environment
 
-    vagrant up --provision
+* Via CentOs GUI
+ <pre><code>  DEV_DESKTOP=true vagrant up</code></pre>
 
-5. To access the development environment via ssh
+* Via ssh
 
-    vagrant ssh
-
-6. To access the development environment with CentOs GUI open VirtualBox select the running the dev-env-cpp VM then click on the Show button.
+<pre><code>   vagrant up
+   vagrant ssh</code></pre>
 
 ### Prerequisites
 
@@ -98,4 +98,18 @@ Before you start, you should already have the following softwares installed:
 
 Distributed under the Apache-2.0 License. See `LICENSE` for more information.
 
-~~~~
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[contributors-shield]: https://img.shields.io/github/contributors/EOEPCA/template-svce.svg?style=flat-square
+[contributors-url]: https://github.com/EOEPCA/template-svce/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/EOEPCA/template-svce.svg?style=flat-square
+[forks-url]: https://github.com/EOEPCA/template-svce/network/members
+[stars-shield]: https://img.shields.io/github/stars/EOEPCA/template-svce.svg?style=flat-square
+[stars-url]: https://github.com/EOEPCA/template-svce/stargazers
+[issues-shield]: https://img.shields.io/github/issues/EOEPCA/template-svce.svg?style=flat-square
+[issues-url]: https://github.com/EOEPCA/template-svce/issues
+[license-shield]: https://img.shields.io/github/license/EOEPCA/template-svce.svg?style=flat-square
+[license-url]: https://github.com/EOEPCA/template-svce/blob/master/LICENSE
+[build-shield]: https://www.travis-ci.com/EOEPCA/template-svce.svg?branch=master
+[product-screenshot]: images/screenshot.png

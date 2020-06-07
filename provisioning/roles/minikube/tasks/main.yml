@@ -143,3 +143,6 @@
 - name: granting admin priviledges
   shell: kubectl create rolebinding default-admin --clusterrole=admin --serviceaccount=default:default
  
+- name: starting proxy to the Kubernetes API server
+  shell: nohup kubectl proxy --port=8080 > /tmp/kubectl_proxy_8080.out &
+ 

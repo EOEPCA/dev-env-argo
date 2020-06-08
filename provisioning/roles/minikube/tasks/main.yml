@@ -144,7 +144,4 @@
   shell: kubectl create rolebinding default-admin --clusterrole=admin --serviceaccount=default:default
  
 - name: starting proxy to the Kubernetes API server
-  shell: nohup kubectl proxy --port=8080 > kubectl_proxy_8080.out &
-
-- name: argo server port forwarding
-  shell: kubectl -n argo port-forward deployment/argo-server 2746:2746 & 
+  shell: kubectl proxy --port=8080 &
